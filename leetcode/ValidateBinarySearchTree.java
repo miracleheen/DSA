@@ -1,5 +1,5 @@
 class ValidateBinarySearchTree {
-     private record Frame(TreeNode node, long low, long high) {}
+    private record Frame(TreeNode node, long low, long high) {}
     public boolean isValidBST(TreeNode root) {
         if(root == null) return false;
         Deque<Frame> stack = new ArrayDeque<>();
